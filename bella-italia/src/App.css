@@ -1,0 +1,139 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fffaf0; /* leicht cremefarben für warmes Restaurant-Feeling */
+  color: #333;
+}
+
+header {
+  background-color: #c0392b; /* schönes Rot für Italien-Vibe */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  padding: 2rem;
+}
+
+/* Startseite & Kontakt */
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Speisekarte */
+section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Dish Grid */
+.dish-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+/* Einzelne Gerichte */
+article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+  width: 200px;
+  text-align: center;
+  background-color: #fff5f0;
+  transition: transform 0.2s;
+}
+
+article:hover {
+  transform: scale(1.05);
+}
+
+article img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+article h3 {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.1rem;
+}
+
+/* Kontaktformular */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+form button {
+  padding: 0.7rem;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background-color: #e74c3c;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  article {
+    width: 100%;
+  }
+}
